@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://thirsty-thompson-9acaf6.netlify.app/",
     credentials: true,
   })
 );
@@ -75,6 +75,6 @@ app.get("/downloadMail", (req, res) => {
   res.download(__dirname + "/public/images/qrmail.svg");
 });
 
-app.listen(3002, function (req, res) {
+app.listen(process.env.PORT || 3002, function (req, res) {
   console.log("App listening to post 3002");
 });
