@@ -7,7 +7,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: "https://thirsty-thompson-9acaf6.netlify.app/",
+    origin: "https://thirsty-thompson-9acaf6.netlify.app",
     credentials: true,
   })
 );
