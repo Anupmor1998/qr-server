@@ -5,16 +5,16 @@ const path = require("path");
 var QRCode = require("qrcode-svg");
 var uuid = require("node-uuid");
 const app = express();
-app.use(bodyParser.json());
 
 app.use(
   cors({
     origin: "https://thirsty-thompson-9acaf6.netlify.app",
     // origin: "http://localhost:3000",
     credentials: true,
+    optionSuccessStatus: 200,
   })
 );
-
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "./public")));
 
