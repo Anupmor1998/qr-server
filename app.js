@@ -3,11 +3,14 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require("path");
 var QRCode = require("qrcode-svg");
+var uuid = require("node-uuid");
 const app = express();
 app.use(bodyParser.json());
+
 app.use(
   cors({
     origin: "https://thirsty-thompson-9acaf6.netlify.app",
+    // origin: "http://localhost:3000",
     credentials: true,
   })
 );

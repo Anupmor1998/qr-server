@@ -8,6 +8,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "init": "^0.1.2",
+    "node-uuid": "^1.4.8",
     "qrcode-svg": "^1.1.0"
   },
   "devDependencies": {},
