@@ -8,7 +8,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://qr-generator-v1.netlify.app/",
+    origin: "https://qr-generator-v1.netlify.app",
     // origin: "http://localhost:3000",
     credentials: true,
     optionSuccessStatus: 200,
